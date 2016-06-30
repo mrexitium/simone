@@ -1,5 +1,176 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
 body {
+  width: 100%;
+  min-height: 100vh;
   font: 100% Helvetica, sans-serif;
-  color: #333; }
+  background-color: #cad2d5; }
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #cad2d5;
+  display: flex;
+  position: fixed;
+  top: 0; }
+  header .logo-wrapper {
+    width: 120px;
+    height: 100px;
+    background-color: #fff;
+    display: inline-block;
+    margin: auto; }
+  header nav.main-menu {
+    display: inline-block;
+    width: 55%;
+    padding-right: 15%; }
+    header nav.main-menu ul {
+      height: 100%;
+      display: flex;
+      list-style: none;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      header nav.main-menu ul li {
+        display: inline-block;
+        margin: auto; }
+        header nav.main-menu ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #000;
+          border-bottom: 1px solid transparent;
+          -webkit-transition: border-bottom 1s;
+          -moz-transition: border-bottom 1s;
+          -ms-transition: border-bottom 1s;
+          -o-transition: border-bottom 1s;
+          transition: border-bottom 1s; }
+          header nav.main-menu ul li a:hover {
+            border-bottom: 1px solid black;
+            -webkit-transition: border-bottom 1s;
+            -moz-transition: border-bottom 1s;
+            -ms-transition: border-bottom 1s;
+            -o-transition: border-bottom 1s;
+            transition: border-bottom 1s; }
+
+.banner {
+  margin: 100px 10% 0 10%;
+  background-color: #202529;
+  width: 80%;
+  height: 500px; }
+  .banner h1 {
+    margin: 0;
+    padding: 10% 5%;
+    text-align: center;
+    font-size: 50px;
+    color: #495e4d; }
+  .banner .box-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .banner .box {
+    background-color: #495e4d;
+    height: 220px;
+    width: 30vw;
+    border-radius: 20px; }
+    .banner .box p {
+      padding: 5%; }
+
+.kontakt {
+  margin: 0 10%;
+  background-color: #859298;
+  width: 80%;
+  height: 700px; }
+  .kontakt h1 {
+    margin: 0;
+    padding: 10% 5% 3% 5%;
+    text-align: center;
+    font-size: 50px;
+    color: #495e4d; }
+  .kontakt .kontakt-wrapper {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .kontakt .kontakt-wrapper .kontakt-img {
+      width: 40%;
+      height: 300px;
+      background-color: #FFF; }
+    .kontakt .kontakt-wrapper .kontakt-text {
+      width: 40%;
+      height: auto;
+      background-color: #718c71;
+      border-radius: 20px; }
+      .kontakt .kontakt-wrapper .kontakt-text p {
+        padding: 0 7%; }
+
+.highlights {
+  margin: 0 10%;
+  background-color: #263228;
+  width: 80%;
+  height: 700px; }
+  .highlights h1 {
+    margin: 0;
+    padding: 10% 5%;
+    text-align: center;
+    font-size: 50px;
+    color: #495e4d; }
+
+footer nav {
+  display: inline-block;
+  width: 80%;
+  margin: 0 10%;
+  height: 80px; }
+  footer nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    footer nav ul li {
+      display: inline-block;
+      margin: auto; }
+      footer nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        border-bottom: 1px solid transparent;
+        -webkit-transition: border-bottom 1s;
+        -moz-transition: border-bottom 1s;
+        -ms-transition: border-bottom 1s;
+        -o-transition: border-bottom 1s;
+        transition: border-bottom 1s; }
+        footer nav ul li a:hover {
+          border-bottom: 1px solid black;
+          -webkit-transition: border-bottom 1s;
+          -moz-transition: border-bottom 1s;
+          -ms-transition: border-bottom 1s;
+          -o-transition: border-bottom 1s;
+          transition: border-bottom 1s; }
+
+button {
+  padding: 1% 4%;
+  display: block;
+  border-radius: 20%;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #3c8c3f;
+  margin: auto; }
+  button:hover {
+    background-color: #3e8e41; }
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); }
 
 /*# sourceMappingURL=style.css.map */
